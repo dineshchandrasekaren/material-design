@@ -1,3 +1,4 @@
+document.documentElement.classList.toggle("dark");
 let newsLaunchesData = [
   {
     image:
@@ -128,3 +129,10 @@ sectionRender.forEach(({ node, data, heading }) => {
   section.appendChild(cardContainer.cloneNode(true));
   cardContainer.innerHTML = "";
 });
+handleMode = () => {
+  document.documentElement.classList.toggle("light");
+  document.documentElement.classList.toggle("dark");
+  let mode = document.documentElement.classList["value"];
+  document.getElementById("mode").innerText =
+    mode === "dark" ? "light_mode" : "dark_mode";
+};
