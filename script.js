@@ -139,5 +139,6 @@ handleSideBar = () => {
     aside.style.display = "none";
   } else {
     aside.style.display = "flex";
+    aside.style.height = "100%";
   }
 };
