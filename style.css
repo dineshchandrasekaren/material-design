@@ -220,7 +220,7 @@ section {
     justify-content: start;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   header h1 {
     font-size: 90px;
     font-weight: 500;
@@ -231,10 +231,12 @@ section {
   }
   .col-2 {
     grid-template-columns: 1fr;
+    word-break: break-all;
     width: 100%;
   }
   .col-3 {
     grid-template-columns: 1fr;
+    word-break: break-all;
     width: 100%;
   }
 }
