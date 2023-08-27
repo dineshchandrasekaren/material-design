@@ -17,6 +17,7 @@
     rgba(196, 199, 197, 0.658)
   );
   --btn-text: #fff;
+  --footer-link-color: #0b57d0;
 
   --hero-image: url("https://lh3.googleusercontent.com/2OrUzHCRSI-V46Z1qJBh90usG6OkKwCbXN80FbrjkWoQz4VfoJjNAoQHLHPQRZWH7dI_m5I1gi48h6xMJ5pK6kkdXmUnXPe4VqwvEdo4QeWRjLV9Oew=w2400-rj");
 }
@@ -25,6 +26,7 @@
   --btn-text: #062e6f;
   --bg-color: #1f1f1f;
 
+  --footer-link-color: #a8c7fa;
   --aside-bg: #28292a;
   --hover-bg: #0f537d;
   --aside-hover-bg: linear-gradient(
@@ -58,7 +60,8 @@ body {
 .material-symbols-outlined:hover {
   background: var(--aside-hover-bg);
 }
-.icon-bg {
+.icon-bg,
+.icon-bg:hover {
   background-color: var(--hover-bg);
 }
 
@@ -285,4 +288,51 @@ nav {
     word-break: break-all;
     width: 100%;
   }
+}
+.footer-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 60px 150px;
+  margin: 30px;
+}
+.about-company svg {
+  background-color: var(--bg-color);
+  fill: var(--text-color);
+}
+.about-company span:hover {
+  text-decoration: underline;
+}
+.about-company {
+  margin: 50px 30px;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  font-weight: 600;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+li:hover {
+  text-decoration: underline;
+}
+li {
+  list-style: none;
+  color: var(--footer-link-color);
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  color: var(--footer-link-color);
+}
+.about-product {
+  line-height: 1.8;
+  max-width: 500px;
+}
+.about-product p {
+  margin-top: 24px;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
