@@ -1,6 +1,6 @@
 // set initaily in dark mode
 document.documentElement.classList.toggle("dark");
-let aside = document.querySelector("aside");
+
 let sectionRender = [
   {
     node: document.getElementById("news-launches"),
@@ -91,9 +91,9 @@ let sectionRender = [
     heading: "Resources",
   },
 ];
-sectionRender.forEach(({ node, data, heading }) => {
-  let section = node;
+sectionRender.forEach(({ node: section, data, heading }) => {
   section.innerHTML = `<h2 class="section-title">${heading}</h2>`;
+
   let cardContainer = document.createElement("div");
   if (heading === "Resources") {
     cardContainer.className = "card-container col-2";
@@ -101,6 +101,7 @@ sectionRender.forEach(({ node, data, heading }) => {
     cardContainer.className = "card-container col-3";
   }
 
+  //render all cards into card container
   data.forEach((cardDetail) => {
     let card = document.createElement("div");
     card.className = "card";
@@ -123,7 +124,11 @@ sectionRender.forEach(({ node, data, heading }) => {
             </div>`;
     cardContainer.appendChild(card);
   });
+
+  //cloned and appended to their section
   section.appendChild(cardContainer.cloneNode(true));
+
+  //reset cardContainer
   cardContainer.innerHTML = "";
 });
 handleMode = () => {
@@ -137,10 +142,11 @@ handleMode = () => {
 };
 
 handleSideBar = () => {
-  if (aside.style.display === "flex") {
-    aside.style.display = "none";
+  let asideStyles = document.querySelector("aside").style;
+  if (asideStyles.display === "flex") {
+    asideStyles.display = "none";
   } else {
-    aside.style.display = "flex";
-    aside.style.height = "100%";
+    asideStyles.display = "flex";
+    asideStyles.height = "100%";
   }
 };
