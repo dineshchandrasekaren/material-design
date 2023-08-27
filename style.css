@@ -87,7 +87,7 @@ aside div {
   flex-direction: column;
   align-items: center;
   font-size: 15px !important;
-  padding: 15px 0 !important;
+  padding: 10px 0 !important;
   cursor: pointer;
 }
 
@@ -95,7 +95,9 @@ aside div {
 .circle-border {
   border: 2px solid var(--text-color);
   border-radius: 70px;
-  margin-top: 50px;
+  margin-top: 40px;
+  padding: 15px 0 !important;
+  justify-self: self-end;
 }
 .circle-border:hover {
   background: var(--aside-hover-bg);
@@ -293,7 +295,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 60px 150px;
+  gap: 60px 120px;
   margin: 30px;
 }
 .about-company svg {
