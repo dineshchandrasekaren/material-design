@@ -98,7 +98,6 @@ aside div {
   border-radius: 70px;
   margin-top: 40px;
   padding: 15px 0 !important;
-  justify-self: self-end;
 }
 .circle-border:hover {
   background: var(--aside-hover-bg);
