@@ -65,7 +65,7 @@ body {
 /* aside styles */
 aside {
   position: sticky;
-  padding: 20px 0;
+  padding: 10px 0;
   top: 0;
   left: 0;
   bottom: 0;
@@ -73,7 +73,6 @@ aside {
   height: 100vh !important;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   background-color: var(--aside-bg);
   overflow-y: auto;
@@ -93,6 +92,7 @@ aside div {
 .circle-border {
   border: 2px solid var(--text-color);
   border-radius: 70px;
+  margin-top: 50px;
 }
 .circle-border:hover {
   background: var(--aside-hover-bg);

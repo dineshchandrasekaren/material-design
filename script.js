@@ -133,7 +133,7 @@ handleMode = () => {
   document.getElementById("mode").innerText =
     mode === "dark" ? "light_mode" : "dark_mode";
   document.querySelector(".mode-status").innerHTML =
-    mode === "dark" ? "Switch to light mode" : "Switch to dark mode";
+    mode === "dark" ? "Switch to Light mode" : "Switch to Dark mode";
 };
 
 handleSideBar = () => {
