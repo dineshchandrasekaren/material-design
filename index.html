@@ -11,122 +11,121 @@
     <title>Material Design</title>
   </head>
   <body>
-    <!--         
-        dark_mode
-    -->
+    <!-- nav bar -->
+    <nav class="top-bar">
+      <span class="material-symbols-outlined" onclick="handleSideBar()">
+        menu
+      </span>
+      <h2>Material Design</h2>
+    </nav>
 
-    <aside>
-      <div>
-        <span class="material-symbols-outlined"> diamond </span>
-        <p>Home</p>
-      </div>
-      <div>
-        <span class="material-symbols-outlined"> apps </span>
-        <p>Get started</p>
-      </div>
-      <div>
-        <span class="material-symbols-outlined"> code </span>
-        <p>Develop</p>
-      </div>
-      <div>
-        <span class="material-symbols-outlined"> book </span>
-        <p>Foundations</p>
-      </div>
-      <div>
-        <span class="material-symbols-outlined"> palette </span>
-        <p>Styles</p>
-      </div>
-      <div>
-        <span class="material-symbols-outlined"> add_circle </span>
-        <p>Components</p>
-      </div>
-      <div>
-        <span class="material-symbols-outlined"> pages </span>
-        <p>Blog</p>
-      </div>
-      <div onclick="handleMode()">
-        <span id="mode" class="material-symbols-outlined circle-border">
-          light_mode
-        </span>
-      </div>
-    </aside>
-
-    <main>
-      <div class="top-bar">
-        <span class="material-symbols-outlined" onclick="handleSideBar()">
-          menu
-        </span>
-        <span>Material Design</span>
-      </div>
-      <header>
-        <div>
-          <h1>Material Design</h1>
-          <p>
-            Material 3 is the latest version of Google’s open-source design
-            system. Design and build beautiful, usable products with Material 3.
-          </p>
-          <button class="btn">Get started</button>
+    <div class="overall-container">
+      <aside>
+        <div class="aside-mob-bg">
+          <span class="material-symbols-outlined icon-bg"> diamond </span>
+          <p>Home</p>
         </div>
-      </header>
+        <div>
+          <span class="material-symbols-outlined"> apps </span>
+          <p>Get started</p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> code </span>
+          <p>Develop</p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> book </span>
+          <p>Foundations</p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> palette </span>
+          <p>Styles</p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> add_circle </span>
+          <p>Components</p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> pages </span>
+          <p>Blog</p>
+        </div>
+        <div onclick="handleMode()" class="circle-border">
+          <span id="mode" class="material-symbols-outlined"> light_mode </span>
+          <h5 class="mode-status">Switch to light mode</h5>
+        </div>
+      </aside>
 
-      <section id="news-launches">
-        <!-- rendered using js -->
-      </section>
-      <section id="designSystem">
-        <!-- rendered using js -->
-      </section>
-      <section id="resources">
-        <!-- rendered using js -->
-      </section>
-      <div style="padding: 80px 0">
-        <svg
-          _ngcontent-ruj-c18=""
-          aria-hidden="true"
-          width="100%"
-          height="8"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <pattern
+      <main>
+        <header>
+          <div>
+            <h1>Material Design</h1>
+            <p>
+              Material 3 is the latest version of Google’s open-source design
+              system. Design and build beautiful, usable products with Material
+              3.
+            </p>
+            <button class="btn">Get started</button>
+          </div>
+        </header>
+        <section id="news-launches">
+          <!-- rendered using js -->
+        </section>
+        <section id="designSystem">
+          <!-- rendered using js -->
+        </section>
+        <section id="resources">
+          <!-- rendered using js -->
+        </section>
+        <div style="padding: 80px 0">
+          <svg
             _ngcontent-ruj-c18=""
-            id="a"
-            width="91"
-            height="8"
-            patternUnits="userSpaceOnUse"
-          >
-            <g _ngcontent-ruj-c18="" clip-path="url(#clip0_2426_11367)">
-              <path
-                _ngcontent-ruj-c18=""
-                d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0"
-                stroke="#E1E3E1"
-                stroke-linecap="square"
-              ></path>
-            </g>
-          </pattern>
-          <rect
-            _ngcontent-ruj-c18=""
+            aria-hidden="true"
             width="100%"
-            height="100%"
-            fill="url(#a)"
-          ></rect>
-        </svg>
-      </div>
-
-      <footer>
-        <div>
-          <span class="material-symbols-outlined" style="font-size: 40px">
-            diamond
-          </span>
-          <p>
-            Material Design is an adaptable system of guidelines, components,
-            and tools that support the best practices of user interface design.
-            Backed by open-source code, Material Design streamlines
-            collaboration between designers and developers, and helps teams
-            quickly build beautiful products.
-          </p>
+            height="8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <pattern
+              _ngcontent-ruj-c18=""
+              id="a"
+              width="91"
+              height="8"
+              patternUnits="userSpaceOnUse"
+            >
+              <g _ngcontent-ruj-c18="" clip-path="url(#clip0_2426_11367)">
+                <path
+                  _ngcontent-ruj-c18=""
+                  d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0"
+                  stroke="#E1E3E1"
+                  stroke-linecap="square"
+                ></path>
+              </g>
+            </pattern>
+            <rect
+              _ngcontent-ruj-c18=""
+              width="100%"
+              height="100%"
+              fill="url(#a)"
+            ></rect>
+          </svg>
         </div>
-      </footer>
-      <script src="./script.js"></script>
-    </main>
+        <footer>
+          <div>
+            <span class="material-symbols-outlined" style="font-size: 40px">
+              diamond
+            </span>
+            <p>
+              Material Design is an adaptable system of guidelines, components,
+              and tools that support the best practices of user interface
+              design. Backed by open-source code, Material Design streamlines
+              collaboration between designers and developers, and helps teams
+              quickly build beautiful products.
+            </p>
+          </div>
+          <div></div>
+        </footer>
+        <script src="./script.js"></script>
+      </main>
+    </div>
   </body>
 </html>

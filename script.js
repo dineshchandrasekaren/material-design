@@ -132,6 +132,8 @@ handleMode = () => {
   let mode = document.documentElement.classList["value"];
   document.getElementById("mode").innerText =
     mode === "dark" ? "light_mode" : "dark_mode";
+  document.querySelector(".mode-status").innerHTML =
+    mode === "dark" ? "Switch to light mode" : "Switch to dark mode";
 };
 
 handleSideBar = () => {
